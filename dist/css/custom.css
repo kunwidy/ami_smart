@@ -1,0 +1,106 @@
+
+
+.bg-login-emonev{
+    background: url(../img/bglogin3.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.card {
+    border-radius: .75rem;
+}
+
+.card-header {
+    border-top-left-radius: .75rem;
+    border-top-right-radius: .75rem;
+}
+
+.small-box, .alert, .info-box {
+    border-radius: .75rem;
+}
+
+.small-box-footer{
+    border-bottom-left-radius: .75rem;
+    border-bottom-right-radius: .75rem;
+}
+
+.btn {
+    border-radius: .45rem;
+}
+
+.form-control, .custom-file-label, .input-group-text  {
+    border-radius: .45rem;
+}
+
+.nav-pills .nav-link, .pagination {
+    border-radius: .45rem;
+}
+
+.ami-box{
+    width: 300px;
+    background: #1a3899;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+.ami-number{
+    background: #aee96b;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.ami-box h4{
+    font-size: 40px;
+}
+.ami-box h4 span{
+    color: #0664cf;
+}
+
+.anim-pulse{
+    background: #aff066;
+    transform: scale(1);
+    animation: pulse 2s infinite;
+    color: #0664cf;
+}
+
+.text-val{
+    font-size:40px;
+    font-weight: bold;
+}
+.text-val sup{
+    font-size: 16px;
+}
+
+.anim-pulse-danger{
+    background: #ff0f0f;
+    transform: scale(1);
+    animation: pulse 2s infinite;
+    color: #300a0a;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 245, 41, 0.2);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 5px rgba(0, 245, 41, 0.2);
+    }
+
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 245, 41, 0.2);
+    }
+}
