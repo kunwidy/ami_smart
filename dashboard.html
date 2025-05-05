@@ -7,7 +7,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>LAPI ITB - Quadran</title>
+  <title>LAPI ITB - Dashboard</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -166,7 +166,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Brand Logo -->
     <a href="index.html" class="brand-link">
       <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">LAPI ITB - Quadran</span>
+      <span class="brand-text font-weight-light">LAPI ITB</span>
     </a>
 
     <!-- Sidebar -->
@@ -209,9 +209,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
           </li>
           <li class="nav-item">
             <a href="ami.html" class="nav-link">
-              <i class="nav-icon fas fa-satellite-dish"></i>
+              <i class="nav-icon fas fa-calculator"></i>
               <p>
-                AMI Online
+                AMI Meter
               </p>
             </a>
           </li>
@@ -282,10 +282,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <div class="row">
             <div class="col-lg-3 col-6">
               <!-- small box -->
-              <div class="small-box bg-info">
+              <div class="small-box bg-primary">
                 <div class="inner">
                   <h3>123.456</h3>
-                  <p>Installation Progress <span class="badge badge-warning">50%</span> </p>
+                  <p>Installation <span class="badge badge-warning">50%</span> </p>
                 </div>
                 <div class="icon">
                   <i class="ion ion-calculator"></i>
@@ -294,12 +294,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </div>
             </div>
 
-            <div class="col-lg-3 col-6">
+            <div class="col-lg-2 col-6">
               <!-- small box -->
-              <div class="small-box bg-warning">
+              <div class="small-box bg-success">
                 <div class="inner">
                   <h3>0 </h3>
-                  <p> Integration Progress <span class="badge badge-info">0%</span></p>
+                  <p> Integration <span class="badge badge-warning">0%</span></p>
                 </div>
                 <div class="icon">
                   <i class="ion ion-calculator"></i>
@@ -308,13 +308,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </div>
             </div>
             
-            <div class="col-lg-3 col-6">
+            <div class="col-lg-2 col-6">
               <!-- small box -->
-              <div class="small-box bg-primary">
+              <div class="small-box bg-warning">
                 <div class="inner">
                   <h3>0</h3>
   
-                  <p> Testing Progress <span class="badge badge-danger">0%</span></p>
+                  <p> Running <span class="badge badge-success">0%</span></p>
                 </div>
                 <div class="icon">
                   <i class="ion ion-calculator"></i>
@@ -323,18 +323,33 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </div>
             </div>
 
-            <div class="col-lg-3 col-6">
+            <div class="col-lg-2 col-6">
               <!-- small box -->
-              <div class="small-box bg-success">
+              <div class="small-box bg-info">
                 <div class="inner">
                   <h3>0</h3>
   
-                  <p>Running Progress <span class="badge badge-danger">0%</span></p>
+                  <p>Field Testing <span class="badge badge-danger">0%</span></p>
                 </div>
                 <div class="icon">
                   <i class="ion ion-calculator"></i>
                 </div>
                 <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-12">
+              <!-- small box -->
+              <div class="small-box bg-danger">
+                <div class="inner">
+                  <h3>0</h3>
+  
+                  <p>Dismantling <span class="badge badge-info">0%</span></p>
+                </div>
+                <div class="icon">
+                  <i class="ion ion-calculator"></i>
+                </div>
+                <a href="#" class="small-box-footer" data-toggle="modal" data-target="#modal-sm">More info <i class="fas fa-arrow-circle-right"></i></a>
               </div>
             </div>
             
@@ -356,6 +371,38 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     </div>
                     <!-- /.card-header -->
                     <div class="card-body">
+                      <div class="row mb-3">
+                        <div class="col-3">
+                          <div class="form-group">
+                            <select class="custom-select">
+                              <option>State Grid</option>
+                              <option>Trillint</option>
+                              <option>NetMore</option>
+                              <option>Itron</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-3">
+                          <div class="form-group">
+                            <select class="custom-select">
+                              <option>Customer</option>
+                              <option>Substation</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-3">
+                          <div class="form-group">
+                            <select class="custom-select">
+                              <option>Online</option>
+                              <option>Offline</option>
+                              <option>N/A</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-3">
+                          <button type="submit" class="btn btn-primary">Show</button>
+                        </div>
+                      </div>
                       <div>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d45923.17376918883!2d115.49938150178801!3d-8.737104067921765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sid!2sid!4v1746311894022!5m2!1sid!2sid" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                       </div>
@@ -374,66 +421,41 @@ scratch. This page gets rid of all links and provides the needed markup only.
            <!-- about -->
            <div class="row">
             <div class="col-lg-12">
-              <h2>Profile partner</h2>
+              <h2>Partner Profile</h2>
 
               <div class="row">
-                <div class="col-5 col-sm-3">
-                  <div class="nav flex-column nav-tabs h-100" id="vert-tabs-tab" role="tablist" aria-orientation="vertical">
-                    <a class="nav-link active" id="vert-tabs-part1-tab" data-toggle="pill" href="#vert-tabs-part1" role="tab" aria-controls="vert-tabs-part1" aria-selected="true">Itron</a>
-                    <a class="nav-link" id="vert-tabs-part2-tab" data-toggle="pill" href="#vert-tabs-part2" role="tab" aria-controls="vert-tabs-part2" aria-selected="false">Hwawei</a>
-                    <a class="nav-link" id="vert-tabs-part3-tab" data-toggle="pill" href="#vert-tabs-part3" role="tab" aria-controls="vert-tabs-part3" aria-selected="false">Triliant</a>
-                    <a class="nav-link" id="vert-tabs-part4-tab" data-toggle="pill" href="#vert-tabs-part4" role="tab" aria-controls="vert-tabs-part4" aria-selected="false">Settings</a>
-                  </div>
-                </div>
                 <div class="col-7 col-sm-9">
-                  <div class="tab-content" id="vert-tabs-tabContent">
+                  <div class="tab-content con-white" id="vert-tabs-tabContent">
                     <div class="tab-pane text-left fade show active" id="vert-tabs-part1" role="tabpanel" aria-labelledby="vert-tabs-part1-tab">
-                       <div>
-                          <h3>ITRON</h3>
-                          <p><img class="img-fluid" src="dist/img/pic.png" alt=""></p>
-                          <p class="lead text-justify">
-                            Itron is innovating new ways for utilities and cities to manage energy and water. As a proven global leader with customers in over 100 countries, we build innovative solutions, create new efficiencies, connect communities, encourage conservation and increase resourcefulness for our customers. Itron’s portfolio of intelligent networks, software, services, meters and sensors provide greater visibility and more control of the world’s energy and water delivery systems.
-                          </p>
-                        
-                          <h5>Innovation is in our DNA</h5>
-                          <p class="text-justify">People throughout the industry know us for delivering proven results, at scale, for decades. Leveraging our expertise and innovation, we open the door to more possibilities for energy, water and city service management with more intelligence that’s delivered in the right places, at the right time.</p>
-                          <div class="row">
-                            <div class="col-12 col-sm-4">
-                              <div class="info-box bg-light">
-                                <div class="info-box-content">
-                                  <span class="info-box-text text-center text-muted">Estimated budget</span>
-                                  <span class="info-box-number text-center text-muted mb-0">2300</span>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-12 col-sm-4">
-                              <div class="info-box bg-light">
-                                <div class="info-box-content">
-                                  <span class="info-box-text text-center text-muted">Total amount spent</span>
-                                  <span class="info-box-number text-center text-muted mb-0">2000</span>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-12 col-sm-4">
-                              <div class="info-box bg-light">
-                                <div class="info-box-content">
-                                  <span class="info-box-text text-center text-muted">Estimated project duration</span>
-                                  <span class="info-box-number text-center text-muted mb-0">20</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
+                       <div class="text-center mb-4">
+                          <img class="img-fluid" src="konten/easy1.png" alt="esyasoft">
+                          <a class="btn btn-primary btn-sm" href="#"><i class="fas fa-link"></i>  LINK TO HES </a>
                        </div>
                     </div>
                     <div class="tab-pane fade" id="vert-tabs-part2" role="tabpanel" aria-labelledby="vert-tabs-part2-tab">
-                       Mauris tincidunt mi at erat gravida, eget tristique urna bibendum. Mauris pharetra purus ut ligula tempor, et vulputate metus facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas sollicitudin, nisi a luctus interdum, nisl ligula placerat mi, quis posuere purus ligula eu lectus. Donec nunc tellus, elementum sit amet ultricies at, posuere nec nunc. Nunc euismod pellentesque diam.
+                      <div class="text-center mb-4">
+                        <img class="img-fluid" src="konten/easy2.png" alt="esyasoft">
+                        <a class="btn btn-primary btn-sm" href="#"><i class="fas fa-link"></i>  LINK TO HES </a>
+                     </div>
                     </div>
                     <div class="tab-pane fade" id="vert-tabs-part3" role="tabpanel" aria-labelledby="vert-tabs-part3-tab">
-                       Morbi turpis dolor, vulputate vitae felis non, tincidunt congue mauris. Phasellus volutpat augue id mi placerat mollis. Vivamus faucibus eu massa eget condimentum. Fusce nec hendrerit sem, ac tristique nulla. Integer vestibulum orci odio. Cras nec augue ipsum. Suspendisse ut velit condimentum, mattis urna a, malesuada nunc. Curabitur eleifend facilisis velit finibus tristique. Nam vulputate, eros non luctus efficitur, ipsum odio volutpat massa, sit amet sollicitudin est libero sed ipsum. Nulla lacinia, ex vitae gravida fermentum, lectus ipsum gravida arcu, id fermentum metus arcu vel metus. Curabitur eget sem eu risus tincidunt eleifend ac ornare magna.
+                      <div class="text-center mb-4">
+                        <img class="img-fluid" src="konten/easy3.png" alt="esyasoft">
+                        <a class="btn btn-primary btn-sm" href="#"><i class="fas fa-link"></i>  LINK TO HES </a>
+                     </div>
                     </div>
-                    <div class="tab-pane fade" id="vert-tabs-part4" role="tabpanel" aria-labelledby="vert-tabs-part4-tab">
+                    <!--<div class="tab-pane fade" id="vert-tabs-part4" role="tabpanel" aria-labelledby="vert-tabs-part4-tab">
                        Pellentesque vestibulum commodo nibh nec blandit. Maecenas neque magna, iaculis tempus turpis ac, ornare sodales tellus. Mauris eget blandit dolor. Quisque tincidunt venenatis vulputate. Morbi euismod molestie tristique. Vestibulum consectetur dolor a vestibulum pharetra. Donec interdum placerat urna nec pharetra. Etiam eget dapibus orci, eget aliquet urna. Nunc at consequat diam. Nunc et felis ut nisl commodo dignissim. In hac habitasse platea dictumst. Praesent imperdiet accumsan ex sit amet facilisis.
-                    </div>
+                    </div>-->
+                  </div>
+                </div>
+
+                <div class="col-5 col-sm-3">
+                  <div class="nav flex-column nav-tabs nav-tabs-right h-100" id="vert-tabs-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active" id="vert-tabs-part1-tab" data-toggle="pill" href="#vert-tabs-part1" role="tab" aria-controls="vert-tabs-part1" aria-selected="true"><i class="fas fa-arrow-left"></i> Esyasoft</a>
+                    <a class="nav-link" id="vert-tabs-part2-tab" data-toggle="pill" href="#vert-tabs-part2" role="tab" aria-controls="vert-tabs-part2" aria-selected="false"><i class="fas fa-arrow-left"></i> Netmore</a>
+                    <a class="nav-link" id="vert-tabs-part3-tab" data-toggle="pill" href="#vert-tabs-part3" role="tab" aria-controls="vert-tabs-part3" aria-selected="false"><i class="fas fa-arrow-left"></i> Triliant</a>
+                    <!--<a class="nav-link" id="vert-tabs-part4-tab" data-toggle="pill" href="#vert-tabs-part4" role="tab" aria-controls="vert-tabs-part4" aria-selected="false">Settings</a> -->
                   </div>
                 </div>
               </div>
@@ -454,12 +476,15 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <div class="card">
                     <div class="card-header">
                       <h3 class="card-title float-left">
-                        <i class="fas fa-male"></i>
-                        MONITORING PROGRESS
+                        <i class="fas fa-truck-monster"></i>
+                        PARTNER PROGRESS
                       </h3>
                       <div class="card-tools">
                         <button type="button" class="btn btn-tool" title="Contacts">
-                            See all <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                          <i class="fas fa-sync"></i>
+                        </button>
+                        <button type="button" class="btn btn-tool">
+                            <i class="fas fa-file-excel"></i>
                         </button>
                     </div>
                     </div>
@@ -473,24 +498,27 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 <th rowspan="2" class="text-center">Target</th>
                                 <th colspan="2" class="text-center">Installation</th>
                                 <th colspan="2" class="text-center">Integration</th>
-                                <th colspan="2" class="text-center">Testing</th>
                                 <th colspan="2" class="text-center">Running</th>
+                                <th colspan="2" class="text-center">Field Testing</th>
+                                <th colspan="2" class="text-center">Dismantling</th>
                               </tr>
                               <tr>
-                                <th class="text-center">Realisasi</th>
-                                <th class="text-center">Persentase</th>
-                                <th class="text-center">Realisasi</th>
-                                <th class="text-center">Persentase</th>
-                                <th class="text-center">Realisasi</th>
-                                <th class="text-center">Persentase</th>
-                                <th class="text-center">Realisasi</th>
-                                <th class="text-center">Persentase</th>
+                                <th class="text-center">Realization</th>
+                                <th class="text-center" style="width: 30px;">Percentage</th>
+                                <th class="text-center">Realization</th>
+                                <th class="text-center" style="width: 30px;">Percentage</th>
+                                <th class="text-center">Realization</th>
+                                <th class="text-center" style="width: 30px;">Percentage</th>
+                                <th class="text-center">Realization</th>
+                                <th class="text-center" style="width: 30px;">Percentage</th>
+                                <th class="text-center">Realization</th>
+                                <th class="text-center" style="width: 30px;">Percentage</th>
                               </tr>
                             </thead>
                             <tbody>
                               <tr>
                                 <td>
-                                    <a href="detail-ami.html">
+                                    <a href="detail-partner.html">
                                         <i class="fas fa-external-link-alt"></i>
                                     </a>
                                 </td>
@@ -504,10 +532,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 <td class="text-center"><span class="badge bg-success">0%</span></td>
                                 <td class="text-center"><span class="badge bg-primary">0</span></td>
                                 <td class="text-center"><span class="badge bg-success">0%</span></td>
+                                <td class="text-center"><span class="badge bg-primary">0</span></td>
+                                <td class="text-center"><span class="badge bg-success">0%</span></td>
                               </tr>
                               <tr>
                                 <td>
-                                    <a href="detail-ami.html">
+                                    <a href="detail-partner.html">
                                         <i class="fas fa-external-link-alt"></i>
                                     </a>
                                 </td>
@@ -521,10 +551,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 <td class="text-center"><span class="badge bg-success">0%</span></td>
                                 <td class="text-center"><span class="badge bg-primary">0</span></td>
                                 <td class="text-center"><span class="badge bg-success">0%</span></td>
+                                <td class="text-center"><span class="badge bg-primary">0</span></td>
+                                <td class="text-center"><span class="badge bg-success">0%</span></td>
                               </tr>
                               <tr>
                                 <td>
-                                    <a href="detail-ami.html">
+                                    <a href="detail-partner.html">
                                         <i class="fas fa-external-link-alt"></i>
                                     </a>
                                 </td>
@@ -538,10 +570,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 <td class="text-center"><span class="badge bg-success">0%</span></td>
                                 <td class="text-center"><span class="badge bg-primary">0</span></td>
                                 <td class="text-center"><span class="badge bg-success">0%</span></td>
+                                <td class="text-center"><span class="badge bg-primary">0</span></td>
+                                <td class="text-center"><span class="badge bg-success">0%</span></td>
                               </tr>
                               <tr>
                                 <td>
-                                    <a href="detail-ami.html">
+                                    <a href="detail-partner.html">
                                         <i class="fas fa-external-link-alt"></i>
                                     </a>
                                 </td>
@@ -555,14 +589,16 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 <td class="text-center"><span class="badge bg-success">0%</span></td>
                                 <td class="text-center"><span class="badge bg-primary">0</span></td>
                                 <td class="text-center"><span class="badge bg-success">0%</span></td>
+                                <td class="text-center"><span class="badge bg-primary">0</span></td>
+                                <td class="text-center"><span class="badge bg-success">0%</span></td>
                               </tr>
                               <tr>
                                 <td>
-                                    <a href="detail-ami.html">
+                                    <a href="detail-partner.html">
                                         <i class="fas fa-external-link-alt"></i>
                                     </a>
                                 </td>
-                                <td><a href="#">EASYASOFT</a></td>
+                                <td><a href="#">ESYASOFT</a></td>
                                 <td class="text-center"><span class="badge bg-danger">1.234</span></td>
                                 <td class="text-center"><span class="badge bg-primary">1.234</span></td>
                                 <td class="text-center"><span class="badge bg-success">100%</span></td>
@@ -572,10 +608,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 <td class="text-center"><span class="badge bg-success">0%</span></td>
                                 <td class="text-center"><span class="badge bg-primary">0</span></td>
                                 <td class="text-center"><span class="badge bg-success">0%</span></td>
+                                <td class="text-center"><span class="badge bg-primary">0</span></td>
+                                <td class="text-center"><span class="badge bg-success">0%</span></td>
                               </tr>
                               <tr>
                                 <td>
-                                    <a href="detail-ami.html">
+                                    <a href="detail-partner.html">
                                         <i class="fas fa-external-link-alt"></i>
                                     </a>
                                 </td>
@@ -589,10 +627,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 <td class="text-center"><span class="badge bg-success">0%</span></td>
                                 <td class="text-center"><span class="badge bg-primary">0</span></td>
                                 <td class="text-center"><span class="badge bg-success">0%</span></td>
+                                <td class="text-center"><span class="badge bg-primary">0</span></td>
+                                <td class="text-center"><span class="badge bg-success">0%</span></td>
                               </tr>
                               <tr>
                                 <td>
-                                    <a href="detail-ami.html">
+                                    <a href="detail-partner.html">
                                         <i class="fas fa-external-link-alt"></i>
                                     </a>
                                 </td>
@@ -606,10 +646,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 <td class="text-center"><span class="badge bg-success">0%</span></td>
                                 <td class="text-center"><span class="badge bg-primary">0</span></td>
                                 <td class="text-center"><span class="badge bg-success">0%</span></td>
+                                <td class="text-center"><span class="badge bg-primary">0</span></td>
+                                <td class="text-center"><span class="badge bg-success">0%</span></td>
                               </tr>
                               <tr>
                                 <td>
-                                    <a href="detail-ami.html">
+                                    <a href="detail-partner.html">
                                         <i class="fas fa-external-link-alt"></i>
                                     </a>
                                 </td>
@@ -617,6 +659,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 <td class="text-center"><span class="badge bg-danger">1.234</span></td>
                                 <td class="text-center"><span class="badge bg-primary">1.234</span></td>
                                 <td class="text-center"><span class="badge bg-success">100%</span></td>
+                                <td class="text-center"><span class="badge bg-primary">0</span></td>
+                                <td class="text-center"><span class="badge bg-success">0%</span></td>
                                 <td class="text-center"><span class="badge bg-primary">0</span></td>
                                 <td class="text-center"><span class="badge bg-success">0%</span></td>
                                 <td class="text-center"><span class="badge bg-primary">0</span></td>
@@ -640,6 +684,30 @@ scratch. This page gets rid of all links and provides the needed markup only.
   </div>
   <!-- /.content-wrapper -->
 
+  <!-- modal 5 -->
+  <div class="modal fade" id="modal-sm">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Dismantling</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum voluptates, recusandae perferendis veritatis esse culpa quia ea neque labore eveniet nobis consectetur quidem corrupti nostrum. Iusto exercitationem unde voluptas cupiditate.&hellip;</p>
+        </div>
+        <div class="modal-footer justify-content-between">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">See detail</button>
+        </div>
+      </div>
+      <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+  <!-- /.modal -->
+
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
     <!-- Control sidebar content goes here -->
@@ -657,7 +725,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       ver.1.0
     </div>
     <!-- Default to the left -->
-    <strong>Copyright &copy; 2025 <a href="#">LAPI ITB - Quadran</a>.</strong> All rights reserved.
+    <strong>Copyright &copy; 2025 <a href="#">LAPI ITB</a>.</strong> All rights reserved.
   </footer>
 </div>
 <!-- ./wrapper -->
@@ -670,6 +738,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE App -->
 <script src="dist/js/adminlte.min.js"></script>
+
+
 
 </body>
 </html>

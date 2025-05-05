@@ -7,7 +7,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>AMI Smart</title>
+    <title>LAPI-ITB</title>
     
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -166,7 +166,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Brand Logo -->
     <a href="index.html" class="brand-link">
       <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">AMI Smart</span>
+      <span class="brand-text font-weight-light">LAPI-ITB</span>
     </a>
 
     <!-- Sidebar -->
@@ -209,41 +209,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
           </li>
           <li class="nav-item">
             <a href="ami.html" class="nav-link">
-              <i class="nav-icon fas fa-satellite-dish"></i>
+              <i class="nav-icon fas fa-calculator"></i>
               <p>
                 AMI Online
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="map.html" class="nav-link">
-              <i class="nav-icon fas fa-map-marker-alt"></i>
-              <p>
-                Map Location
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="customer.html" class="nav-link">
-              <i class="nav-icon fas fa-qrcode"></i>
-              <p>
-                Customer
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="gardu.html" class="nav-link">
-              <i class="nav-icon fas fa-plug"></i>
-              <p>
-                Sub Station
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="partner.html" class="nav-link">
-              <i class="nav-icon fas fa-house-user"></i>
-              <p>
-                Partner
               </p>
             </a>
           </li>
@@ -252,21 +220,27 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <a href="monitoring.html" class="nav-link">
               <i class="nav-icon fas fa-poll"></i>
               <p>
-                Monitoring
+                Master data
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="customer.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Active Page</p>
+                  <p>Customer</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="gardu.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Inactive Page</p>
+                  <p>Substation</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="partner" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Partner</p>
                 </a>
               </li>
             </ul>
@@ -428,7 +402,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <div class="info-box-content">
                   <span class="info-box-text">POWER L1</span>
                   <span class="text-val">
-                    2.87<sup>V</sup>
+                    2.87<sup>Volt</sup>
                   </span>
                   <span class="progress-description">
                     Last 5 minutes
@@ -443,7 +417,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <div class="info-box-content">
                   <span class="info-box-text">POWER L2</span>
                   <span class="text-val">
-                    2.87<sup>V</sup>
+                    2.87<sup>Volt</sup>
                   </span>
                   <span class="progress-description">
                     Last 5 minutes
@@ -458,7 +432,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <div class="info-box-content">
                   <span class="info-box-text">POWER L3</span>
                   <span class="text-val">
-                    0.00<sup>V</sup>
+                    0.00<sup>Volt</sup>
                   </span>
                   <span class="progress-description">
                     Last 5 minutes
@@ -490,9 +464,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   </div>
                 </div>
                 <div class="card-body">
-                    <div class="chart">
+                    <!--<div class="chart">
                         <canvas id="areaChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
-                    </div>
+                    </div>-->
+                    <img class="img-fluid" src="konten/cart1.png" alt="guge">
                 </div>
               </div>
             </div>
@@ -512,9 +487,54 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   </div>
                 </div>
                 <div class="card-body">
-                    <div class="chart">
-                        <canvas id="lineChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
-                      </div>
+                  <img class="img-fluid" src="konten/cart2.png" alt="guge">
+                </div>
+              </div>
+            </div>
+            <!-- /.col-md-6 -->
+          </div>
+          <!-- /.row -->
+
+           <!-- spacer -->
+           <div class="mb-4"></div>
+
+          <div class="row">
+            <!-- /.col-md-6 -->
+            <div class="col-lg-6">
+              <div class="card">
+                <div class="card-header">
+                  <h5 class="float-left">Current</h5>
+                  <div class="card-tools">
+                      <button type="button" class="btn btn-tool" title="Contacts">
+                          <i class="fas fa-sync"></i>
+                      </button>
+                      <button type="button" class="btn btn-tool">
+                          <i class="fas fa-file-excel"></i>
+                      </button>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <img class="img-fluid" src="konten/cart3.png" alt="guge">
+                </div>
+              </div>
+            </div>
+            <!-- /.col-md-6 -->
+             <!-- /.col-md-6 -->
+            <div class="col-lg-6">
+              <div class="card">
+                <div class="card-header">
+                  <h5 class="float-left">Active and Reactive energy</h5>
+                  <div class="card-tools">
+                      <button type="button" class="btn btn-tool" title="Contacts">
+                          <i class="fas fa-sync"></i>
+                      </button>
+                      <button type="button" class="btn btn-tool">
+                          <i class="fas fa-file-excel"></i>
+                      </button>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <img class="img-fluid" src="konten/cart4.png" alt="guge">
                 </div>
               </div>
             </div>
@@ -644,7 +664,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       ver.1.0
     </div>
     <!-- Default to the left -->
-    <strong>Copyright &copy; 2025 <a href="#">AMI Smart</a>.</strong> All rights reserved.
+    <strong>Copyright &copy; 2025 <a href="#">LAPI-ITB</a>.</strong> All rights reserved.
   </footer>
 </div>
 <!-- ./wrapper -->

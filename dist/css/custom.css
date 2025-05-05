@@ -73,6 +73,16 @@
     color: #0664cf;
 }
 
+.con-white{
+    background: #fff;
+    margin-right: -15px;
+    padding: 20px 20px 0 20px;
+    border: 1px solid transparent;
+    border-color: #dee2e6 transparent #dee2e6 #dee2e6;
+    border-bottom-left-radius: .75rem;
+    border-top-left-radius: .75rem;
+}
+
 .text-val{
     font-size:40px;
     font-weight: bold;
