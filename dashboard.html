@@ -166,7 +166,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Brand Logo -->
     <a href="index.html" class="brand-link">
       <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">LAPI ITB</span>
+      <span class="brand-text font-weight-light">POC-LAPI ITB</span>
     </a>
 
     <!-- Sidebar -->
@@ -266,7 +266,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="dashboard.html">Home</a></li>
               <li class="breadcrumb-item active">Dashboard</li>
             </ol>
           </div><!-- /.col -->
@@ -280,6 +280,42 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <div class="container-fluid">
         <!-- Small boxes (Stat box) -->
         <div class="row">
+            <div class="col-12">
+              <div class="card mb-5">
+                <div class="card-body">
+                  <h4>Welcome to Prove of Concept (POC)</h4>
+                <p class="lead">
+                  Communication Technology of Advanced Metering Infrastructure at Smart Microgrid Island Nusa Penida, Bali.
+                </p>
+                </div>
+              </div>
+
+                <div class="mt-4">
+                  <form action="#">
+                    <div class="row mb-3">
+                      <div class="col-3">
+                        <div class="form-group">
+                          <select class="custom-select">
+                            <option value="">Select partner</option>
+                            <option>All</option>
+                            <option>EDMI</option>
+                            <option>Esyasoft</option>
+                            <option>Huawei</option>
+                            <option>Itron</option>
+                            <option>Icepco</option>
+                            <option>NetMore</option>
+                            <option>State Grid</option>
+                            <option>Trilliant</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <button type="submit" class="btn btn-primary">Show <i class="fas fa-arrow-right"></i></button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+            </div>
             <div class="col-lg-3 col-6">
               <!-- small box -->
               <div class="small-box bg-primary">
@@ -695,7 +731,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
   <!-- modal 1 -->
   <div class="modal fade" id="modal-sm1">
-    <div class="modal-dialog modal-sm">
+    <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Installation</h4>
@@ -705,6 +741,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
         </div>
         <div class="modal-body">
           <p>Installation of AMI devices such as smart meters, communication modules (ECU/RF/PLC), and other supporting devices at the test site.</p>
+          <div class="bg-primary p-2">
+            <h5 class="text-white text-center">Current Progress :<br> 123.456</h5>
+          </div>
         </div>
       </div>
       <!-- /.modal-content -->
@@ -715,7 +754,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
   <!-- modal 2 -->
   <div class="modal fade" id="modal-sm2">
-    <div class="modal-dialog modal-sm">
+    <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Integration</h4>
@@ -725,6 +764,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
         </div>
         <div class="modal-body">
           <p>The process of integrating devices in the field with central systems such as Head-End System (HES) and Meter Data Management System (MDMS), including communication network connections.</p>
+          <div class="bg-success p-2">
+            <h5 class="text-white text-center">Current Progress :<br> 0</h5>
+          </div>
         </div>
       </div>
       <!-- /.modal-content -->
@@ -735,7 +777,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
   <!-- modal 3 -->
   <div class="modal fade" id="modal-sm3">
-    <div class="modal-dialog modal-sm">
+    <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Running</h4>
@@ -745,6 +787,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
         </div>
         <div class="modal-body">
           <p>The system is started to ensure that data can flow from the meter to the HES/MDMS in real-time according to the expected functionality.</p>
+          <div class="bg-warning p-2">
+            <h5 class="text-white text-center">Current Progress :<br> 0</h5>
+          </div>
         </div>
       </div>
       <!-- /.modal-content -->
@@ -755,7 +800,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
   <!-- modal 4 -->
   <div class="modal fade" id="modal-sm4">
-    <div class="modal-dialog modal-sm">
+    <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Field Testing</h4>
@@ -765,6 +810,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
         </div>
         <div class="modal-body">
           <p>Field testing to ensure all main AMI functions are running properly, such as meter reading, disconnect/reconnect, notification, and other technical parameters.</p>
+          <div class="bg-info p-2">
+            <h5 class="text-white text-center">Current Progress :<br> 0</h5>
+          </div>
         </div>
       </div>
       <!-- /.modal-content -->
@@ -775,7 +823,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
   <!-- modal 5 -->
   <div class="modal fade" id="modal-sm">
-    <div class="modal-dialog modal-sm">
+    <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Dismantling</h4>
@@ -785,6 +833,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
         </div>
         <div class="modal-body">
           <p>After the PoC is completed, all installed AMI devices will be dismantled and the location returned to its original state, unless there is a decision to continue the implementation.</p>
+          <div class="bg-danger p-2">
+            <h5 class="text-white text-center">Current Progress :<br> 0</h5>
+          </div>
         </div>
       </div>
       <!-- /.modal-content -->
